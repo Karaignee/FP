@@ -1,0 +1,823 @@
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #fcfff2;
+	background-image: url(background.jpg);
+	background-attachment: fixed;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	
+	font-family: "lucida grande","lucida sans unicode","lucida sans",verdana,sans-serif;
+}
+
+.ui-button::-moz-focus-inner {
+	border: 0;
+}
+
+.ui-button {
+	background-color: #7fbf4d;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+	background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: linear-gradient(top, #7fbf4d, #63a62f);
+	border: 1px solid #63a62f;
+	border-bottom: 1px solid #5b992b;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+	-moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+	box-shadow: inset 0 1px 0 0 #96ca6d;
+	color: #fff;
+	font: bold 11px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	line-height: 1;
+	padding: 7px 5px 8px 5px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #4c9021;
+}
+
+.ui-button:hover {
+	background-color: #76b347;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+	background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: linear-gradient(top, #76b347, #5e9e2e);
+	-webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+	-moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+	box-shadow: inset 0 1px 0 0 #8dbf67;
+	cursor: pointer;
+}
+
+.ui-button:active, .ui-button.active {
+	border: 1px solid #5b992b;
+	border-bottom: 1px solid #538c27;
+	-webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+	-moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+	box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 720px;
+	padding-top: 10px;
+}
+
+#title {
+	width: 150px;
+	height: 135px;
+	
+	background-image: url(title.png);
+	
+	text-align: center;
+	font-size: 23px;
+}
+
+#title div {
+	width: 150px;
+}
+
+#title .container {
+	font-family: Georgia, serif;
+	padding: 5px;
+	
+	background: rgba(255, 255, 255, 0.7);
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+	
+	position: relative;
+	top: 50px;
+	z-index: 5;
+}
+
+#contact {
+	font-size: 11px;
+	
+	position: absolute;
+	left: 50%;
+	top: 125px;
+}
+
+#contact .group {
+	padding: 0 5px;
+}
+
+#contact a {
+	color: black;
+}
+
+#container {
+	margin-bottom: 10px;
+	
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+	
+	behavior: url(http://clarefoleyacupuncture.com/js/PIE.php);
+}
+
+#footer {
+	padding-bottom: 10px;
+	
+	font-size: 12px;
+	text-align: center;
+}
+
+#footer a {
+	color: black;
+}
+
+#nav {
+	border: 1px solid #bfd478;
+	height: 30px;
+	
+	font-size: 13px;
+	
+	background-color: #dfebba;
+	background-image: -moz-linear-gradient(top, #e9f3c8, #dfebba);
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#e9f3c8), to(#dfebba) );
+	-pie-background: linear-gradient(top, #e9f3c8, #dfebba);
+	
+	border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	
+	behavior: url(http://clarefoleyacupuncture.com/js/PIE.php);
+	position: relative;
+	z-index: 5;
+}
+
+#nav a:focus, #lower-nav-inner a:focus {
+    outline: 0;
+}
+
+.nav-drop:first-child .nav-item {
+	border-radius: 10px 0 0 0;
+	-moz-border-radius: 10px 0 0 0;
+	-webkit-border-radius: 10px 0 0 0;
+}
+
+.nav-item {
+	border-right: 1px solid #bfd478;
+	padding: 0 15px;
+	display: block;
+	float: left;
+	position: relative;
+	
+	color: #6d7650;
+	line-height: 30px;
+	text-shadow: 1px 1px 0 #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+}
+
+.nav-item.active {
+	border-bottom: 1px solid #fcfff1;
+	color: #5c6444;
+	
+	background-color: #fcfff1;
+	background-image: -moz-linear-gradient(top, #e3efbd, #fcfff1);
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#e3efbd), to(#fcfff1) );
+	-pie-background: linear-gradient(top, #e3efbd, #fcfff1);
+	
+	behavior: url(http://clarefoleyacupuncture.com/js/PIE.php);
+	position: relative;
+	z-index: 0;
+}
+
+.nav-sub {
+	display: none;
+	border: 1px solid #bfd478;
+	
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	z-index: 5;
+	
+	background-color: #fefffc;
+	background-image: -moz-linear-gradient(top, #fcfff1, #fefffc);
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#fcfff1), to(#fefffc) );
+	-pie-background: linear-gradient(top, #fcfff1, #fefffc);
+	
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.nav-sub a {
+	display: block;
+	padding: 5px;
+	
+	color: #6d7650;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav-sub a:hover {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#lower-nav {
+	border: 1px solid #bfd478;
+	border-width: 0 1px 1px 1px;
+	height: 26px;
+	overflow: hidden;
+	
+	background-color: #f0f7d7;
+	background-image: -moz-linear-gradient(top, #fcfff1, #f0f7d7);
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#fcfff1), to(#f0f7d7) );
+	-pie-background: linear-gradient(top, #fcfff1, #f0f7d7);
+}
+
+#lower-nav-inner {
+	padding: 3px 10px;
+	height: 20px;
+	
+	line-height: 20px;
+}
+
+#lower-nav a {
+	color: #6d7751;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 white;
+}
+
+#home {
+	border-radius: 8px 0 0 0;
+	-moz-border-radius: 8px 0 0 0;
+	-webkit-border-radius: 8px 0 0 0;
+	
+	behavior: url(http://clarefoleyacupuncture.com/js/PIE.php);
+	position: relative;
+	z-index: 0;
+}
+
+#content {
+	border: 1px solid #bfd478;
+	border-width: 0 1px 1px 1px;
+	padding: 10px 20px;
+	overflow: auto;
+	
+	font-size: 13px;
+	line-height: 18px;
+	text-align: justify;
+	opacity: 1;
+	
+	background-color: #fefffc;
+	background-image: -moz-linear-gradient(top, #fcfff1, #fefffc);
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#fcfff1), to(#fefffc) );
+	
+	border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
+	-webkit-border-radius: 0 0 8px 8px;
+	
+	/*-pie-background: linear-gradient(top, #fcfff1, #fefffc);
+	behavior: url(http://clarefoleyacupuncture.com/js/PIE.php);*/
+	position: relative;
+	z-index: 0;
+}
+
+.content-inner {
+	width: 678px;
+}
+
+#left {
+	float: left;
+	width: 380px;
+}
+
+#right {
+	float: right;
+	width: 275px;
+}
+
+.img-right {
+	margin: 8px 0px 8px 20px;
+	float: right;
+}
+
+.img-zoom {
+	cursor: pointer;
+}
+
+.img-border {
+	border: 1px solid #cccccc;
+	padding: 5px;
+	
+	background-color: #EEEEEE;
+	
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+#main-img {
+	width: 400px;
+	position: relative;
+}
+
+#main-img-under {
+	width: 388px;
+	padding-top: 5px;
+	
+	position: absolute;
+	bottom: 11px;
+	left: 16px;
+	
+	color: #222222;
+	/*background-color: rgba(255, 255, 255, 0.7);*/
+	text-align: left;
+	font-style: italic;
+}
+
+h2, h3, .title {
+	color: #78980f;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+h3 {
+	border-bottom: 1px dotted #78980f;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+h3.page-header {
+	margin-top: 5px;
+}
+
+#right h2 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#right .section {
+	margin-bottom: 15px;
+}
+
+.box {
+	border: 1px solid #78980F;
+	padding: 5px 10px;
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+	
+	background: #f4f9e4;
+}
+
+#locations {
+	font-size: 12px;
+	line-height: 25px;
+}
+
+#locations .box {
+	padding: 0;
+}
+
+#locations ul {
+	margin: 0;
+	padding: 5px 20px;
+	
+	line-height: 22px;
+}
+
+#locations li, #locations li a {
+	color: #3d3e3b;
+}
+
+#locations li span {
+	color: black;
+}
+
+#locations .list-under {
+	padding-left: 5px;
+	line-height: 18px;
+}
+
+#news-links .sub-content {
+	padding-top: 5px;
+}
+
+.news-article {
+	display: block;
+	height: 120px;
+	overflow: hidden;
+	
+	color: black;
+	text-decoration: none;
+}
+
+.news-title {
+	padding-bottom: 5px;
+	width: 253px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+	font-family: Georgia;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.news-content {
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.news-content img {
+	margin-right: 10px;
+	float: left;
+}
+
+.sub-contact {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.open-contact {
+	margin-top: 10px;
+}
+
+#right #contact-section {
+	margin-bottom: 0;
+}
+
+/* Contact Form */
+
+.open-contact {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+
+#contact-sent {
+	display: none;
+	
+	text-align: center;
+}
+
+#contact-sent .title {
+	font-size: 20px;
+	padding-top: 90px;
+}
+
+#contact-form label {
+	width: 120px;
+	padding: 4px 4px 0 0;
+	display: block;
+	
+	clear: left;
+	float: left;
+	
+    font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+
+#contact-form .contact-input {
+	border: 1px solid #cccccc;
+	float: left;
+	font-family: 'Trebuchet MS',Verdana,Arial;
+	margin: 2px;
+	padding: 2px;
+	width: 300px;
+}
+
+#contact-form .button-container {
+	width: 320px;
+}
+
+#contact-form .ui-button {
+	margin-top: 10px;
+}
+
+#contact-message {
+	font-size: 14px;
+}
+
+#modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+#modal-container {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	
+	border-width: 8px;
+	border-style: solid;
+	border-color: #cbccc9;
+	border-color: rgba(0, 0, 0, 0.2);
+	
+	background-clip: padding-box;
+	
+	background-image: -moz-linear-gradient(top, #fcfff1, #fefffc);
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#fcfff1), to(#fefffc) );
+	-pie-background: linear-gradient(top, #fcfff1, #fefffc);
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	behavior: url(http://clarefoleyacupuncture.com/js/PIE.php);
+}
+
+#modal-container.padded {
+	padding: 12px;
+}
+
+#modal-container > img {
+	display: block;
+}
+
+#modal-close {
+	width: 17px;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	
+	cursor: pointer;
+	
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+#modal-inner.text {
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Testimonials */
+
+.nojs #testimonial-add-text {
+	display: none;
+}
+
+fieldset {
+	border: 1px solid #78980F;
+	margin: 15px 0;
+	
+	background-image: -moz-linear-gradient(top, #f9fdec, #f7fde3);
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#f9fdec), to(#f7fde3) );
+	
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+fieldset legend {
+	font-weight: bold;
+}
+
+#testimonial-add-text {
+	padding-top: 5px;
+	text-align: right;
+}
+
+#testimonials .ui-button {
+	display: block;
+	margin: 5px auto 0 auto;
+	width: 70px;
+}
+
+#testimonials legend {
+    border: 1px solid #78980F;
+    padding: 5px 15px;
+    
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 white;
+    
+    background: #d5eba4;
+	background: -moz-linear-gradient(top, #ffffff 0%, #d5eba4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5eba4));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#d5eba4 100%);
+	
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials p {
+	border: 1px solid #ccc;
+	margin: 10px 5px;
+	padding: 10px;
+
+	font-size: 12px;
+	
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fafafa));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#fafafa 100%);
+}
+
+#testimonials legend + p {
+	margin-top: 5px;
+}
+
+.testimonial-container {
+	overflow: hidden;
+}
+
+.testimonial-full {
+	display: none;
+}
+
+.nojs #testimonials .ui-button {
+	display: none;
+}
+
+.nojs .testimonial-long .testimonial-text {
+	display: none;
+}
+
+.nojs .testimonial-long .testimonial-full {
+	display: block;
+}
+
+.manage-testim-row {
+	margin: 10px;
+	border: 1px solid #1fd01f;
+	padding: 7px;
+	height: 18px;
+	position: relative;
+	
+	cursor: pointer;
+	font-size: 18px;
+	
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fafafa));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#fafafa 100%);
+}
+
+.manage-testim-row.pending {
+	border-color: #D01F3C;
+}
+
+.manage-testim-row .approved {
+	font-size: 15px;
+}
+
+.manage-testim-row .delete {
+	display: block;
+	position: absolute;
+	right: 5px;
+	bottom: 2px;
+}
+
+.manage-testim-modal table {
+	width: 600px;
+}
+
+.manage-testim-modal textarea {
+	height: 400px;
+	width: 490px;
+}
+
+.manage-testim-modal input {
+	width: 490px;
+}
+
+.manage-testim-modal .ui-button {
+	display: inline-block;
+	width: 100px;
+}
+
+/* Login */
+
+#login-form {
+	text-align: center;
+	height: 200px;
+	line-height: 200px;
+}
+
+#login-pass {
+	padding: 2px;
+	height: 30px;
+	width: 200px;
+	
+	font-size: 20px;
+}
+
+#login-submit {
+	font-size: 20px;
+}
+
+/* Misc */
+
+.snippet {
+	display: none;
+}
+
+.form-left {
+	width: 100px;
+	
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+form table {
+	width: 500px;
+}
+
+form td {
+	padding: 3px 0;
+}
+
+form table textarea {
+	width: 390px;
+	height: 200px;
+	
+	font-size: 13px;
+}
+
+form table input {
+	width: 390px;
+}
+
+form table .ui-button {
+	font-size: 14px;
+}
+
+.form-submit {
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 200px;
+	
+	cursor: pointer;
+	text-align: center;
+}
+
+textarea, input {
+	border: 1px solid #ccc;
+	padding: 3px 6px;
+	
+	font-family: tahoma;
+    
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fafafa));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#fafafa 100%);
+	
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+    resize: vertical;
+}
